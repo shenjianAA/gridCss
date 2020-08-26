@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid css</title>
+    <link rel="stylesheet" href="../css/common.css" />
+    <style>
+      span {
+        font-size: 2em;
+      }
+
+      #container {
+        display: grid;
+        grid-template-columns: 50px 50px 50px;
+        grid-template-rows: 50px 50px 50px;
+      }
+      #container1 {
+        display: inline-grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="http://www.ruanyifeng.com/blog/2019/03/grid-layout-tutorial.html"
+      >传送门</a
+    >
+    <h3>
+      Grid 布局与 Flex
+      布局有一定的相似性，都可以指定容器内部多个项目的位置。但是，它们也存在重大区别。
+    </h3>
+    <h3>
+      Flex
+      布局是轴线布局，只能指定"项目"针对轴线的位置，可以看作是一维布局。Grid
+      布局则是将容器划分成"行"和"列"，产生单元格，
+      然后指定"项目所在"的单元格，可以看作是二维布局。Grid 布局远比 Flex
+      布局强大。
+    </h3>
+    <h1>容器属性</h1>
+    <h2>display: grid /display: inline-grid</h2>
+    <div>
+      <span>foo</span>
+      <div id="container">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-7">7</div>
+        <div class="item item-8">8</div>
+        <div class="item item-9">9</div>
+      </div>
+      <span>bar</span>
+    </div>
+    <div>
+      <span>foo</span>
+      <div id="container1">
+        <div class="item item-1">1</div>
+        <div class="item item-2">2</div>
+        <div class="item item-3">3</div>
+        <div class="item item-4">4</div>
+        <div class="item item-5">5</div>
+        <div class="item item-6">6</div>
+        <div class="item item-7">7</div>
+        <div class="item item-8">8</div>
+        <div class="item item-9">9</div>
+      </div>
+      <span>bar</span>
+    </div>
+  </body>
+</html>
